@@ -38,7 +38,9 @@ export default async function Home() {
         )}
 
         <HomepageHeader>Announcements</HomepageHeader>
-        <div>Mandatory Meeting: 6pm, Jan. 22</div>
+        <div>
+          Mandatory Meeting: Friday, September 6th from 4:30-5:30 in HT 120
+        </div>
 
         <HomepageHeader classname="mt-8">About Us</HomepageHeader>
         <div>
