@@ -37,7 +37,7 @@ export default function ({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <div className="mb-2 flex gap-7 pb-2">
+      <div className="mb-2 flex gap-7 p-8 pb-2">
         {links.map((link) => (
           <Link
             key={link.href}

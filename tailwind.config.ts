@@ -22,7 +22,7 @@ const config = {
     },
     extend: {
       colors: {
-        bg: "#212121",
+        bg: "#121212",
         "card-bg": "#2e2e2e",
         border: "#414141",
         text: "#ffffff",
