@@ -6,7 +6,7 @@ interface DjSetCurrentSongProps {
   showId: string;
 }
 export const DjControls = ({ showId }: DjSetCurrentSongProps) => {
-  const { data: liveSong, status } = api.live.getCurrentlyPlayingSong.useQuery(
+  const { data: liveSong } = api.live.getCurrentlyPlayingSong.useQuery(
     {
       showId: showId,
     },
@@ -22,7 +22,7 @@ export const DjControls = ({ showId }: DjSetCurrentSongProps) => {
   });
 
   const clearSongMutation = api.live.clearCurrentlyPlayingSong.useMutation({
-    onSuccess(_, variables, __) {
+    onSuccess() {
       utils.live.getCurrentlyPlayingSong.setData({ showId }, null);
     },
   });
