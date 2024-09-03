@@ -27,7 +27,7 @@ export const ScheduleShow = ({ shows }: ScheduleShowProps) => {
 
   return (
     <main>
-      <div className="mb-4 text-lg font-semibold">Schedule</div>
+      <div className="mb-4 py-4 text-lg">Schedule</div>
       <div className="m-auto flex max-w-[600px] flex-col gap-8">
         {Object.entries(groupedShows).map(([key, shows]) => (
           <div key={key}>

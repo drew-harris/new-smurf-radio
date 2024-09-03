@@ -22,7 +22,7 @@ export const MainLayout = ({
   const pathname = usePathname();
 
   const mainContainerClass = cn(
-    "mx-4 text-text bg-[#141414] border border-b-none grow border-black pb-12 md:mx-[120px]",
+    "mx-4 text-text bg-[#141414] border border-b-none grow border-black px-4 md:px-8 pb-12 md:mx-[120px]",
     pathname === "/live" && "flex-1 overflow-hidden p-0 sm:p-4",
   );
 
