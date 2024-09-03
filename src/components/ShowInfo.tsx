@@ -22,15 +22,15 @@ export const ShowInfo = ({
   variant = "full",
   extraElements,
 }: ShowInfoProps) => {
-  const outer = cva("flex-col flex bg-[#1C1C1C] border-neutral-800 border-2", {
+  const outer = cva("flex-col flex", {
     variants: {
       variant: {
         full: "gap-3 p-4",
         compact: "gap-1 p-3",
       },
       fillBg: {
-        true: "bg-blue-950",
-        false: "bg-transparent border-2",
+        true: "bg-neutral-800",
+        false: "bg-neutral-800 border border-neutral-600",
       },
     },
 

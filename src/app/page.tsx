@@ -13,9 +13,7 @@ const HomepageHeader = ({
   children: ReactNode;
   classname?: string;
 }) => {
-  return (
-    <div className={cn("text-[22px] font-bold", classname)}>{children}</div>
-  );
+  return <div className={cn("text-[22px]", classname)}>{children}</div>;
 };
 
 export default async function Home() {
