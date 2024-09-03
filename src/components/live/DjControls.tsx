@@ -1,7 +1,6 @@
 import { type DbSong } from "~/types/dbSong";
 import { SongSearchInput } from "../SongSearchInput";
 import { api } from "~/trpc/react";
-import { Button } from "../ui/button";
 
 interface DjSetCurrentSongProps {
   showId: string;
@@ -37,7 +36,7 @@ export const DjControls = ({ showId }: DjSetCurrentSongProps) => {
   };
 
   return (
-    <div className="hidden items-stretch gap-2 md:flex">
+    <div className="flex flex-col items-stretch gap-2">
       {liveSong && (
         <button
           onClick={() => {

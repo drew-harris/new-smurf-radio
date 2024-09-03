@@ -54,6 +54,7 @@ export const LiveView = ({ payload }: LiveViewProps) => {
               <Player title={"SMURF Radio - " + payload.currentShow.djName} />
             }
             show={payload.currentShow}
+            fillBg={false}
           ></ShowInfo>
           {payload.nextShows.length > 0 && (
             <div className="my-4 text-center text-xs text-text/50">

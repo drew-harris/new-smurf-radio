@@ -44,11 +44,9 @@ export const ShowInfo = ({
     <div className={outer({ fillBg, variant })}>
       <div className="flex w-full items-center justify-between gap-8">
         <div className="flex gap-10">
-          <div className="text-[16px] font-semibold">{show.djName}</div>
+          <div className="text-[14px] font-semibold">{show.djName}</div>
           {variant == "compact" && (
-            <div className="text-[16px] font-medium text-text/40">
-              {show.title}
-            </div>
+            <div className="text-[14px] text-text/40">{show.title}</div>
           )}
         </div>
         <div className="flex gap-6 text-[14px]">
