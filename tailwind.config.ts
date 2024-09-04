@@ -24,7 +24,7 @@ const config = {
       colors: {
         bg: "#121212",
         "card-bg": "#121212",
-        border: "#414141",
+        border: "#515151",
         text: "#ffffff",
         "input-bg": "#191919",
         "smu-red": "#CC0135",

@@ -41,7 +41,7 @@ export default async function Home() {
         </div>
 
         <HomepageHeader classname="mt-8">About Us</HomepageHeader>
-        <div>
+        <div className="text-sm">
           Student Managed University Radio Frequency is SMU’s college radio
           program! We were officiated in April of 2023. This program is open to
           all music and/or radio enthusiasts, and we strive to provide a

@@ -30,7 +30,7 @@ export default function ({ children }: { children: ReactNode }) {
 
   if (user.accessLevel == 4) {
     links.push({
-      label: "ADMIN",
+      label: "Admin",
       href: "/member/admin",
     });
   }
@@ -42,7 +42,7 @@ export default function ({ children }: { children: ReactNode }) {
           <Link
             key={link.href}
             className={twMerge(
-              "text-sm font-semibold uppercase",
+              "text-sm",
               pathname?.includes(link.href)
                 ? "underline decoration-2"
                 : undefined,
@@ -53,7 +53,7 @@ export default function ({ children }: { children: ReactNode }) {
           </Link>
         ))}
       </div>
-      <div>{children}</div>
+      <div className="py-7 md:px-[60px]">{children}</div>
     </>
   );
 }

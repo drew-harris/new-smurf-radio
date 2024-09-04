@@ -30,7 +30,7 @@ export const ShowInfo = ({
       },
       fillBg: {
         true: "bg-neutral-800",
-        false: "bg-neutral-800 border border-neutral-600",
+        false: "bg-[#191919] border border-neutral-600",
       },
     },
 
